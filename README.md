@@ -46,7 +46,7 @@
     
 >7.这个手势默认是和以下两种功能冲突：<br />
     >>7.1 scrollView<br />
-    >>7.2 右滑返回（右滑弹出栈顶控制器，参见https://github.com/nsdictionary/SwipeNavigationVC）<br />
+    >>7.2 右滑返回（右滑弹出栈顶控制器，参见https://github.com/nsdictionary/SwipeNavigationVC ）<br />
   本框架仍然是可以处理这个冲突的，示例中关于页面就是一个scrollView，处理这个冲突需要只需两步：
     （1）调用-(void)addPanView:(UIView *)panView; 添加手势功能<br />
     （2）在您的scrollView页面左侧添加一个空白的view即可。
