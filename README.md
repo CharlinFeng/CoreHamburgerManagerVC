@@ -47,7 +47,7 @@
 >7.这个手势默认是和以下两种功能冲突：<br />
     >>7.1 scrollView<br />
     >>7.2 右滑返回（右滑弹出栈顶控制器，参见https://github.com/nsdictionary/SwipeNavigationVC ）<br />
-  本框架仍然是可以处理这个冲突的，示例中关于页面就是一个scrollView，处理这个冲突需要只需两步：
+  本框架仍然是可以处理这个冲突的，示例中关于页面就是一个scrollView，处理这个冲突需要只需两步：<br />
     （1）调用-(void)addPanView:(UIView *)panView; 添加手势功能<br />
     （2）在您的scrollView页面左侧添加一个空白的view即可。
    
@@ -62,7 +62,7 @@
 <br />
 
 -----
-    CorePullScale 表格顶部图片下拉放大控件，`一键式安装`，异常简单！   感谢您的关注！ 
+    CoreHamburgerManagerVC 汉堡菜单，高度解耦，您想怎么搞就怎么搞！   感谢您的关注！ 
 -----
 
 
