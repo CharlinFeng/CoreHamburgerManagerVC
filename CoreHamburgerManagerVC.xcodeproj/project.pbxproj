@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89C2D8C11A942B5E00496961 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C2D8C01A942B5E00496961 /* Foundation.framework */; };
+		89C2D8C31A942B5E00496961 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C2D8C21A942B5E00496961 /* CoreGraphics.framework */; };
+		89C2D8C51A942B5E00496961 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C2D8C41A942B5E00496961 /* UIKit.framework */; };
+		89C2D8DA1A942B5F00496961 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C2D8D91A942B5F00496961 /* XCTest.framework */; };
+		89C2D8DF1A942B5F00496961 /* CoreHamburgerNavVCTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89C2D8DE1A942B5F00496961 /* CoreHamburgerNavVCTests-Info.plist */; };
+		89C2D8E11A942B5F00496961 /* CoreHamburgerNavVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C2D8E01A942B5F00496961 /* CoreHamburgerNavVCTests.m */; };
+		D6C48B101A9B3EEC00C53409 /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C48AF21A9B3EEC00C53409 /* AboutVC.m */; };
+		D6C48B111A9B3EEC00C53409 /* AboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C48AF31A9B3EEC00C53409 /* AboutVC.xib */; };
+		D6C48B121A9B3EEC00C53409 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C48AF51A9B3EEC00C53409 /* AppDelegate.m */; };
+		D6C48B131A9B3EEC00C53409 /* CoreHamburgerManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C48AF81A9B3EEC00C53409 /* CoreHamburgerManagerVC.m */; };
+		D6C48B141A9B3EEC00C53409 /* CoreHamburgerNavVC-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6C48AFA1A9B3EEC00C53409 /* CoreHamburgerNavVC-Info.plist */; };
+		D6C48B151A9B3EEC00C53409 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C48AFC1A9B3EEC00C53409 /* Images.xcassets */; };
+		D6C48B161A9B3EEC00C53409 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C48AFE1A9B3EEC00C53409 /* 1.png */; };
+		D6C48B171A9B3EEC00C53409 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C48AFF1A9B3EEC00C53409 /* 2.png */; };
+		D6C48B181A9B3EEC00C53409 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C48B001A9B3EEC00C53409 /* 3.png */; };
+		D6C48B191A9B3EEC00C53409 /* IndexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C48B021A9B3EEC00C53409 /* IndexVC.m */; };
+		D6C48B1A1A9B3EEC00C53409 /* IndexVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C48B031A9B3EEC00C53409 /* IndexVC.xib */; };
+		D6C48B1B1A9B3EEC00C53409 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6C48B041A9B3EEC00C53409 /* Info.plist */; };
+		D6C48B1C1A9B3EEC00C53409 /* LeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C48B061A9B3EEC00C53409 /* LeftVC.m */; };
+		D6C48B1D1A9B3EEC00C53409 /* LeftVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C48B071A9B3EEC00C53409 /* LeftVC.xib */; };
+		D6C48B1E1A9B3EEC00C53409 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C48B081A9B3EEC00C53409 /* main.m */; };
+		D6C48B1F1A9B3EEC00C53409 /* MyNavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C48B0A1A9B3EEC00C53409 /* MyNavVC.m */; };
+		D6C48B201A9B3EEC00C53409 /* MyTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C48B0C1A9B3EEC00C53409 /* MyTabbarVC.m */; };
+		D6C48B211A9B3EEC00C53409 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C48B0E1A9B3EEC00C53409 /* NewsVC.m */; };
+		D6C48B221A9B3EEC00C53409 /* NewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C48B0F1A9B3EEC00C53409 /* NewsVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		89C2D8BD1A942B5E00496961 /* CoreHamburgerManagerVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreHamburgerManagerVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89C2D8C01A942B5E00496961 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		89C2D8C21A942B5E00496961 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		89C2D8C41A942B5E00496961 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		89C2D8D81A942B5F00496961 /* CoreHamburgerManagerVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreHamburgerManagerVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89C2D8D91A942B5F00496961 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		89C2D8DD1A942B5F00496961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89C2D8DE1A942B5F00496961 /* CoreHamburgerNavVCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreHamburgerNavVCTests-Info.plist"; sourceTree = "<group>"; };
+		89C2D8E01A942B5F00496961 /* CoreHamburgerNavVCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreHamburgerNavVCTests.m; sourceTree = "<group>"; };
+		D6C48AF11A9B3EEC00C53409 /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
+		D6C48AF21A9B3EEC00C53409 /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
+		D6C48AF31A9B3EEC00C53409 /* AboutVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutVC.xib; sourceTree = "<group>"; };
+		D6C48AF41A9B3EEC00C53409 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6C48AF51A9B3EEC00C53409 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6C48AF71A9B3EEC00C53409 /* CoreHamburgerManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreHamburgerManagerVC.h; sourceTree = "<group>"; };
+		D6C48AF81A9B3EEC00C53409 /* CoreHamburgerManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreHamburgerManagerVC.m; sourceTree = "<group>"; };
+		D6C48AF91A9B3EEC00C53409 /* HMSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSingleton.h; sourceTree = "<group>"; };
+		D6C48AFA1A9B3EEC00C53409 /* CoreHamburgerNavVC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CoreHamburgerNavVC-Info.plist"; sourceTree = "<group>"; };
+		D6C48AFB1A9B3EEC00C53409 /* CoreHamburgerNavVC-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreHamburgerNavVC-Prefix.pch"; sourceTree = "<group>"; };
+		D6C48AFC1A9B3EEC00C53409 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D6C48AFE1A9B3EEC00C53409 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		D6C48AFF1A9B3EEC00C53409 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		D6C48B001A9B3EEC00C53409 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		D6C48B011A9B3EEC00C53409 /* IndexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexVC.h; sourceTree = "<group>"; };
+		D6C48B021A9B3EEC00C53409 /* IndexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexVC.m; sourceTree = "<group>"; };
+		D6C48B031A9B3EEC00C53409 /* IndexVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexVC.xib; sourceTree = "<group>"; };
+		D6C48B041A9B3EEC00C53409 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6C48B051A9B3EEC00C53409 /* LeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftVC.h; sourceTree = "<group>"; };
+		D6C48B061A9B3EEC00C53409 /* LeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftVC.m; sourceTree = "<group>"; };
+		D6C48B071A9B3EEC00C53409 /* LeftVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftVC.xib; sourceTree = "<group>"; };
+		D6C48B081A9B3EEC00C53409 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6C48B091A9B3EEC00C53409 /* MyNavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavVC.h; sourceTree = "<group>"; };
+		D6C48B0A1A9B3EEC00C53409 /* MyNavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavVC.m; sourceTree = "<group>"; };
+		D6C48B0B1A9B3EEC00C53409 /* MyTabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabbarVC.h; sourceTree = "<group>"; };
+		D6C48B0C1A9B3EEC00C53409 /* MyTabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabbarVC.m; sourceTree = "<group>"; };
+		D6C48B0D1A9B3EEC00C53409 /* NewsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsVC.h; sourceTree = "<group>"; };
+		D6C48B0E1A9B3EEC00C53409 /* NewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsVC.m; sourceTree = "<group>"; };
+		D6C48B0F1A9B3EEC00C53409 /* NewsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89C2D8BA1A942B5D00496961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C2D8C31A942B5E00496961 /* CoreGraphics.framework in Frameworks */,
+				89C2D8C51A942B5E00496961 /* UIKit.framework in Frameworks */,
+				89C2D8C11A942B5E00496961 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C2D8D51A942B5F00496961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C2D8DA1A942B5F00496961 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89C2D8B41A942B5D00496961 = {
+			isa = PBXGroup;
+			children = (
+				D6C48AF01A9B3EEC00C53409 /* CoreHamburgerManagerVC */,
+				89C2D8DB1A942B5F00496961 /* CoreHamburgerNavVCTests */,
+				89C2D8BF1A942B5E00496961 /* Frameworks */,
+				89C2D8BE1A942B5E00496961 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89C2D8BE1A942B5E00496961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89C2D8BD1A942B5E00496961 /* CoreHamburgerManagerVC.app */,
+				89C2D8D81A942B5F00496961 /* CoreHamburgerManagerVCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89C2D8BF1A942B5E00496961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89C2D8C01A942B5E00496961 /* Foundation.framework */,
+				89C2D8C21A942B5E00496961 /* CoreGraphics.framework */,
+				89C2D8C41A942B5E00496961 /* UIKit.framework */,
+				89C2D8D91A942B5F00496961 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89C2D8DB1A942B5F00496961 /* CoreHamburgerNavVCTests */ = {
+			isa = PBXGroup;
+			children = (
+				89C2D8DE1A942B5F00496961 /* CoreHamburgerNavVCTests-Info.plist */,
+				89C2D8E01A942B5F00496961 /* CoreHamburgerNavVCTests.m */,
+				89C2D8DC1A942B5F00496961 /* Supporting Files */,
+			);
+			path = CoreHamburgerNavVCTests;
+			sourceTree = "<group>";
+		};
+		89C2D8DC1A942B5F00496961 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89C2D8DD1A942B5F00496961 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6C48AF01A9B3EEC00C53409 /* CoreHamburgerManagerVC */ = {
+			isa = PBXGroup;
+			children = (
+				D6C48AF41A9B3EEC00C53409 /* AppDelegate.h */,
+				D6C48AF51A9B3EEC00C53409 /* AppDelegate.m */,
+				D6C48AF61A9B3EEC00C53409 /* CoreHamburgerManagerVC */,
+				D6C48AFA1A9B3EEC00C53409 /* CoreHamburgerNavVC-Info.plist */,
+				D6C48AFB1A9B3EEC00C53409 /* CoreHamburgerNavVC-Prefix.pch */,
+				D6C48AFC1A9B3EEC00C53409 /* Images.xcassets */,
+				D6C48AFD1A9B3EEC00C53409 /* img */,
+				D6C48B011A9B3EEC00C53409 /* IndexVC.h */,
+				D6C48B021A9B3EEC00C53409 /* IndexVC.m */,
+				D6C48B031A9B3EEC00C53409 /* IndexVC.xib */,
+				D6C48B041A9B3EEC00C53409 /* Info.plist */,
+				D6C48B051A9B3EEC00C53409 /* LeftVC.h */,
+				D6C48B061A9B3EEC00C53409 /* LeftVC.m */,
+				D6C48B071A9B3EEC00C53409 /* LeftVC.xib */,
+				D6C48B081A9B3EEC00C53409 /* main.m */,
+				D6C48B091A9B3EEC00C53409 /* MyNavVC.h */,
+				D6C48B0A1A9B3EEC00C53409 /* MyNavVC.m */,
+				D6C48B0B1A9B3EEC00C53409 /* MyTabbarVC.h */,
+				D6C48B0C1A9B3EEC00C53409 /* MyTabbarVC.m */,
+				D6C48B0D1A9B3EEC00C53409 /* NewsVC.h */,
+				D6C48B0E1A9B3EEC00C53409 /* NewsVC.m */,
+				D6C48B0F1A9B3EEC00C53409 /* NewsVC.xib */,
+				D6C48AF11A9B3EEC00C53409 /* AboutVC.h */,
+				D6C48AF21A9B3EEC00C53409 /* AboutVC.m */,
+				D6C48AF31A9B3EEC00C53409 /* AboutVC.xib */,
+			);
+			path = CoreHamburgerManagerVC;
+			sourceTree = "<group>";
+		};
+		D6C48AF61A9B3EEC00C53409 /* CoreHamburgerManagerVC */ = {
+			isa = PBXGroup;
+			children = (
+				D6C48AF71A9B3EEC00C53409 /* CoreHamburgerManagerVC.h */,
+				D6C48AF81A9B3EEC00C53409 /* CoreHamburgerManagerVC.m */,
+				D6C48AF91A9B3EEC00C53409 /* HMSingleton.h */,
+			);
+			path = CoreHamburgerManagerVC;
+			sourceTree = "<group>";
+		};
+		D6C48AFD1A9B3EEC00C53409 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				D6C48AFE1A9B3EEC00C53409 /* 1.png */,
+				D6C48AFF1A9B3EEC00C53409 /* 2.png */,
+				D6C48B001A9B3EEC00C53409 /* 3.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89C2D8BC1A942B5D00496961 /* CoreHamburgerManagerVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89C2D8E41A942B5F00496961 /* Build configuration list for PBXNativeTarget "CoreHamburgerManagerVC" */;
+			buildPhases = (
+				89C2D8B91A942B5D00496961 /* Sources */,
+				89C2D8BA1A942B5D00496961 /* Frameworks */,
+				89C2D8BB1A942B5D00496961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreHamburgerManagerVC;
+			productName = CoreHamburgerNavVC;
+			productReference = 89C2D8BD1A942B5E00496961 /* CoreHamburgerManagerVC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89C2D8D71A942B5F00496961 /* CoreHamburgerManagerVCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89C2D8E71A942B5F00496961 /* Build configuration list for PBXNativeTarget "CoreHamburgerManagerVCTests" */;
+			buildPhases = (
+				89C2D8D41A942B5F00496961 /* Sources */,
+				89C2D8D51A942B5F00496961 /* Frameworks */,
+				89C2D8D61A942B5F00496961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreHamburgerManagerVCTests;
+			productName = CoreHamburgerNavVCTests;
+			productReference = 89C2D8D81A942B5F00496961 /* CoreHamburgerManagerVCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89C2D8B51A942B5D00496961 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Charlin;
+				TargetAttributes = {
+					89C2D8BC1A942B5D00496961 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					89C2D8D71A942B5F00496961 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 89C2D8B81A942B5D00496961 /* Build configuration list for PBXProject "CoreHamburgerManagerVC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89C2D8B41A942B5D00496961;
+			productRefGroup = 89C2D8BE1A942B5E00496961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89C2D8BC1A942B5D00496961 /* CoreHamburgerManagerVC */,
+				89C2D8D71A942B5F00496961 /* CoreHamburgerManagerVCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89C2D8BB1A942B5D00496961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C48B1D1A9B3EEC00C53409 /* LeftVC.xib in Resources */,
+				D6C48B1B1A9B3EEC00C53409 /* Info.plist in Resources */,
+				D6C48B151A9B3EEC00C53409 /* Images.xcassets in Resources */,
+				D6C48B221A9B3EEC00C53409 /* NewsVC.xib in Resources */,
+				D6C48B1A1A9B3EEC00C53409 /* IndexVC.xib in Resources */,
+				D6C48B161A9B3EEC00C53409 /* 1.png in Resources */,
+				D6C48B171A9B3EEC00C53409 /* 2.png in Resources */,
+				D6C48B181A9B3EEC00C53409 /* 3.png in Resources */,
+				D6C48B141A9B3EEC00C53409 /* CoreHamburgerNavVC-Info.plist in Resources */,
+				D6C48B111A9B3EEC00C53409 /* AboutVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C2D8D61A942B5F00496961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C2D8DF1A942B5F00496961 /* CoreHamburgerNavVCTests-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89C2D8B91A942B5D00496961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C48B131A9B3EEC00C53409 /* CoreHamburgerManagerVC.m in Sources */,
+				D6C48B191A9B3EEC00C53409 /* IndexVC.m in Sources */,
+				D6C48B201A9B3EEC00C53409 /* MyTabbarVC.m in Sources */,
+				D6C48B211A9B3EEC00C53409 /* NewsVC.m in Sources */,
+				D6C48B121A9B3EEC00C53409 /* AppDelegate.m in Sources */,
+				D6C48B1C1A9B3EEC00C53409 /* LeftVC.m in Sources */,
+				D6C48B1F1A9B3EEC00C53409 /* MyNavVC.m in Sources */,
+				D6C48B1E1A9B3EEC00C53409 /* main.m in Sources */,
+				D6C48B101A9B3EEC00C53409 /* AboutVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C2D8D41A942B5F00496961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C2D8E11A942B5F00496961 /* CoreHamburgerNavVCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		89C2D8E21A942B5F00496961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Huang Yun (97C6MQ6H5Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Huang Yun (97C6MQ6H5Y)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		89C2D8E31A942B5F00496961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89C2D8E51A942B5F00496961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CoreHamburgerManagerVC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = CoreHamburgerManagerVC;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		89C2D8E61A942B5F00496961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CoreHamburgerManagerVC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = CoreHamburgerManagerVC;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		89C2D8E81A942B5F00496961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoreHamburgerNavVCTests/Info.plist;
+				PRODUCT_NAME = CoreHamburgerManagerVCTests;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		89C2D8E91A942B5F00496961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoreHamburgerNavVCTests/Info.plist;
+				PRODUCT_NAME = CoreHamburgerManagerVCTests;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89C2D8B81A942B5D00496961 /* Build configuration list for PBXProject "CoreHamburgerManagerVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C2D8E21A942B5F00496961 /* Debug */,
+				89C2D8E31A942B5F00496961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89C2D8E41A942B5F00496961 /* Build configuration list for PBXNativeTarget "CoreHamburgerManagerVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C2D8E51A942B5F00496961 /* Debug */,
+				89C2D8E61A942B5F00496961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89C2D8E71A942B5F00496961 /* Build configuration list for PBXNativeTarget "CoreHamburgerManagerVCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C2D8E81A942B5F00496961 /* Debug */,
+				89C2D8E91A942B5F00496961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89C2D8B51A942B5D00496961 /* Project object */;
+}

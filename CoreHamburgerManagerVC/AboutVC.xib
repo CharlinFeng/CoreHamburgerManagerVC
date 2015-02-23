@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o26-UU-BPy">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFA-j2-9UV">
+                            <rect key="frame" x="40" y="100" width="600" height="600"/>
+                            <subviews>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jtA-nU-llF">
+                                    <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                </switch>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYh-NW-Ei5">
+                                    <rect key="frame" x="0.0" y="569" width="51" height="31"/>
+                                </switch>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOx-5d-Qtl">
+                                    <rect key="frame" x="551" y="0.0" width="51" height="31"/>
+                                </switch>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1yT-wC-aUu">
+                                    <rect key="frame" x="551" y="569" width="51" height="31"/>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="scrollView,分别拖动中间部份和左侧边缘" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="147-yz-FcW">
+                                    <rect key="frame" x="16" y="71" width="169" height="85"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="pYh-NW-Ei5" firstAttribute="leading" secondItem="ZFA-j2-9UV" secondAttribute="leading" id="6ef-Y9-zJ6"/>
+                                <constraint firstAttribute="bottom" secondItem="1yT-wC-aUu" secondAttribute="bottom" id="CYy-rR-Twe"/>
+                                <constraint firstAttribute="trailing" secondItem="1yT-wC-aUu" secondAttribute="trailing" id="ItF-a9-Qmu"/>
+                                <constraint firstAttribute="trailing" secondItem="uOx-5d-Qtl" secondAttribute="trailing" id="ReH-nA-mXh"/>
+                                <constraint firstItem="jtA-nU-llF" firstAttribute="leading" secondItem="ZFA-j2-9UV" secondAttribute="leading" id="Xix-OJ-nlh"/>
+                                <constraint firstAttribute="width" constant="600" id="cNd-Bx-d41"/>
+                                <constraint firstAttribute="height" constant="600" id="gih-68-zEy"/>
+                                <constraint firstItem="jtA-nU-llF" firstAttribute="top" secondItem="ZFA-j2-9UV" secondAttribute="top" id="vO2-xv-H5E"/>
+                                <constraint firstAttribute="bottom" secondItem="pYh-NW-Ei5" secondAttribute="bottom" id="xh2-HV-xCd"/>
+                                <constraint firstItem="uOx-5d-Qtl" firstAttribute="top" secondItem="ZFA-j2-9UV" secondAttribute="top" id="zaG-Qd-cOm"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ZFA-j2-9UV" secondAttribute="trailing" constant="80" id="Bqs-J8-1Cc"/>
+                        <constraint firstItem="ZFA-j2-9UV" firstAttribute="top" secondItem="o26-UU-BPy" secondAttribute="top" constant="100" id="b8o-mV-FWs"/>
+                        <constraint firstAttribute="bottom" secondItem="ZFA-j2-9UV" secondAttribute="bottom" constant="80" id="gna-k1-Ssg"/>
+                        <constraint firstItem="ZFA-j2-9UV" firstAttribute="leading" secondItem="o26-UU-BPy" secondAttribute="leading" constant="40" id="iat-gg-lFc"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="o26-UU-BPy" secondAttribute="bottom" id="DwQ-OY-Vwj"/>
+                <constraint firstAttribute="trailing" secondItem="o26-UU-BPy" secondAttribute="trailing" id="QYm-zB-zzA"/>
+                <constraint firstItem="o26-UU-BPy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="crK-61-LnU"/>
+                <constraint firstItem="o26-UU-BPy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oK1-IA-ndT"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
