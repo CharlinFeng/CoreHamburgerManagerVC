@@ -25,29 +25,31 @@
 >5.在你想要的地方请调用以下方法即可展示左侧菜单或者关闭
 
     /*
- *  展示左侧的汉堡包菜单
- */
--(void)showHamburgerMeauVC;
+     *  展示左侧的汉堡包菜单
+     */
+    -(void)showHamburgerMeauVC;
 
 
-/*
- *  隐藏左侧的汉堡包菜单
- */
--(void)hideHamburgerMeauVC;
+    /*
+     *  隐藏左侧的汉堡包菜单
+     */
+    -(void)hideHamburgerMeauVC;
 
 >6.并不是所有的页面都需要这个效果，所以这个效果默认是关闭的，你要手动在需要手势滑动左侧菜单的页面添加这个功能：
 
+    //调用
     -(void)addPanView:(UIView *)panView;
     
-    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC sharedCoreHamburgerManagerVC];
+     CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC sharedCoreHamburgerManagerVC];
     
     [hvc addPanView:self.view];
->7.这个手势默认是和以下两种功能冲突：
-    >>7.1 scrollView
-    >>7.2 右滑返回（右滑弹出栈顶控制器，参见https://github.com/nsdictionary/SwipeNavigationVC）
+    
+>7.这个手势默认是和以下两种功能冲突：<br />
+    >>7.1 scrollView<br />
+    >>7.2 右滑返回（右滑弹出栈顶控制器，参见https://github.com/nsdictionary/SwipeNavigationVC）<br />
   本框架仍然是可以处理这个冲突的，示例中关于页面就是一个scrollView，处理这个冲突需要只需两步：
-   >>> 调用-(void)addPanView:(UIView *)panView; 添加手势功能
-   >>> 在您的scrollView页面左侧添加一个空白的view即可。
+    （1）调用-(void)addPanView:(UIView *)panView; 添加手势功能<br />
+    （2）在您的scrollView页面左侧添加一个空白的view即可。
    
   
 <br />
