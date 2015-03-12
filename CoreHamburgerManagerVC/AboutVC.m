@@ -24,7 +24,7 @@
 //    topView.backgroundColor=[UIColor redColor];
     [self.view addSubview:topView];
     
-    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC sharedCoreHamburgerManagerVC];
+    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC findHamburgerManagerVCFromVC:self];
     
         [hvc addPanView:self.view];
 

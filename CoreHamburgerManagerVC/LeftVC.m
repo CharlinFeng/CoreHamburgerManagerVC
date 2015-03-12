@@ -43,7 +43,8 @@
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC sharedCoreHamburgerManagerVC];
+    
+    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC findHamburgerManagerVCFromVC:self];
     
     if(hvc.leftVCListItemClickBlock!=nil) hvc.leftVCListItemClickBlock(hvc,indexPath.row);
     

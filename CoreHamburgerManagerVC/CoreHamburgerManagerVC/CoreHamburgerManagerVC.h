@@ -7,14 +7,14 @@
 //  基于导航条的汉堡包菜单控制器
 
 #import <UIKit/UIKit.h>
-#import "HMSingleton.h"
+
 
 @class CoreHamburgerManagerVC;
 
 typedef void(^LeftVCListItemClickBlock)(CoreHamburgerManagerVC *hmc, NSInteger index);
 
 @interface CoreHamburgerManagerVC : UIViewController
-HMSingletonH(CoreHamburgerManagerVC)
+
 
 @property (nonatomic,assign,readonly) BOOL leftVCShowing;                                //是否展示左侧菜单控制器
 
@@ -25,6 +25,7 @@ HMSingletonH(CoreHamburgerManagerVC)
  *快速包装一个汉堡包菜单控制器体系
  */
 +(instancetype)hamburgerManagerVCWithMainVC:(UIViewController *)mainVC bgView:(UIView *)bgView leftVC:(UIViewController *)leftVC scale:(CGFloat)scale leftMargin:(CGFloat)leftMargin;
+
 
 
 
@@ -41,6 +42,16 @@ HMSingletonH(CoreHamburgerManagerVC)
 
 
 -(void)addPanView:(UIView *)panView;
+
+
+/**
+ *  找到汉堡控制器：
+ *
+ *  @param vc 需要找到汉堡控制器的子控制器
+ *
+ *  @return 汉堡控制器
+ */
++(instancetype)findHamburgerManagerVCFromVC:(UIViewController *)vc;
 
 
 

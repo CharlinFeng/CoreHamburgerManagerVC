@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.tabBarItem.title=@"新闻";
-    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC sharedCoreHamburgerManagerVC];
+    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC findHamburgerManagerVCFromVC:self];
     
     [hvc addPanView:self.view];
 

@@ -18,14 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC sharedCoreHamburgerManagerVC];
-    
-    hvc.leftVCListItemClickBlock=^(CoreHamburgerManagerVC *hmc ,NSInteger index){
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC findHamburgerManagerVCFromVC:self];
         
-        self.selectedIndex=index;
-        [hmc hideHamburgerMeauVC];
-    };
-    
+        hvc.leftVCListItemClickBlock=^(CoreHamburgerManagerVC *hmc ,NSInteger index){
+            
+            self.selectedIndex=index;
+            [hmc hideHamburgerMeauVC];
+        };
+
+    });
     self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc] initWithTitle:@"菜单" style:UIBarButtonItemStylePlain target:self action:@selector(showMeau)];
 
 }
@@ -33,7 +35,7 @@
 
 -(void)showMeau{
     
-    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC sharedCoreHamburgerManagerVC];
+    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC findHamburgerManagerVCFromVC:self];
     
     [hvc showHamburgerMeauVC];
 }

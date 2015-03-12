@@ -54,7 +54,7 @@ CGFloat const leftViewScale=.9f;                                                
 @end
 
 @implementation CoreHamburgerManagerVC
-HMSingletonM(CoreHamburgerManagerVC)
+
 
 /*
  *快速包装一个汉堡包菜单控制器体系
@@ -269,6 +269,8 @@ HMSingletonM(CoreHamburgerManagerVC)
         
         CGFloat scale=self.scale;
         
+        kfa.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+        
         kfa.values=@[@(scale),@(scale-.03f),@(scale-.01f),@(scale),@(scale+.006f),@(scale)];
         
         kfa.duration=.5f;
@@ -385,6 +387,29 @@ HMSingletonM(CoreHamburgerManagerVC)
     //解决iPhone6 Plus横屏下阴影错乱的问题
     _mainVC.view.layer.shadowPath=CGPathCreateWithRect(_mainVC.view.bounds, NULL);
 }
+
+/**
+ *  找到汉堡控制器：
+ *
+ *  @param vc 需要找到汉堡控制器的子控制器
+ *
+ *  @return 汉堡控制器
+ */
++(instancetype)findHamburgerManagerVCFromVC:(UIViewController *)vc{
+    
+    UIViewController *parentVC=vc.parentViewController;
+    
+    if(parentVC==nil) return nil;
+    
+    if([parentVC isKindOfClass:self]){
+        return parentVC;
+    }else{
+        return [self findHamburgerManagerVCFromVC:parentVC];
+    }
+}
+
+
+
 
 
 

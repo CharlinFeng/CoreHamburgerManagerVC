@@ -34,6 +34,8 @@
     tabVC.viewControllers=@[indexVC,newsVC,aboutVC];
 
     MyNavVC *navVC=[[MyNavVC alloc] initWithRootViewController:tabVC];
+
+    
    //leftVC
     LeftVC *leftVC=[[LeftVC alloc] init];
     

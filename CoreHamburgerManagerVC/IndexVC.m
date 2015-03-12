@@ -23,7 +23,7 @@
     //禁用
     self.tabBarItem.title=@"首页";
     
-    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC sharedCoreHamburgerManagerVC];
+    CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC findHamburgerManagerVCFromVC:self];
     
     [hvc addPanView:self.view];
 

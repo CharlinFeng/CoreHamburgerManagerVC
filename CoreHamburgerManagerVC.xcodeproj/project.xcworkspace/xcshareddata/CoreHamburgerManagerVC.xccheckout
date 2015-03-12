@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>76FAE7DA-8AA1-4582-AD2C-5B4713D04B68</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CoreHamburgerManagerVC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>91131C00FD2AA2B24E2625835AED92463F1087CF</key>
+		<string>https://github.com/nsdictionary/CoreHamburgerManagerVC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CoreHamburgerManagerVC.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>91131C00FD2AA2B24E2625835AED92463F1087CF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nsdictionary/CoreHamburgerManagerVC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>91131C00FD2AA2B24E2625835AED92463F1087CF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>91131C00FD2AA2B24E2625835AED92463F1087CF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoreHamburgerManagerVC</string>
+		</dict>
+	</array>
+</dict>
+</plist>
