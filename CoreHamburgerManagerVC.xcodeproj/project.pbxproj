@@ -31,7 +31,7 @@
 		D6C48B201A9B3EEC00C53409 /* MyTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C48B0C1A9B3EEC00C53409 /* MyTabbarVC.m */; };
 		D6C48B211A9B3EEC00C53409 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C48B0E1A9B3EEC00C53409 /* NewsVC.m */; };
 		D6C48B221A9B3EEC00C53409 /* NewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C48B0F1A9B3EEC00C53409 /* NewsVC.xib */; };
-		EEC7A0E91AB1A93000061070 /* CoreHamburgerManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7A0E81AB1A93000061070 /* CoreHamburgerManagerVC.m */; };
+		EE3FF1131AB94F07003A528A /* CoreHamburgerManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3FF1111AB94F07003A528A /* CoreHamburgerManagerVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,8 +70,9 @@
 		D6C48B0D1A9B3EEC00C53409 /* NewsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsVC.h; sourceTree = "<group>"; };
 		D6C48B0E1A9B3EEC00C53409 /* NewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsVC.m; sourceTree = "<group>"; };
 		D6C48B0F1A9B3EEC00C53409 /* NewsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsVC.xib; sourceTree = "<group>"; };
-		EEC7A0E71AB1A93000061070 /* CoreHamburgerManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreHamburgerManagerVC.h; sourceTree = "<group>"; };
-		EEC7A0E81AB1A93000061070 /* CoreHamburgerManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreHamburgerManagerVC.m; sourceTree = "<group>"; };
+		EE3FF1101AB94F07003A528A /* CoreHamburgerManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreHamburgerManagerVC.h; sourceTree = "<group>"; };
+		EE3FF1111AB94F07003A528A /* CoreHamburgerManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreHamburgerManagerVC.m; sourceTree = "<group>"; };
+		EE3FF1121AB94F07003A528A /* HMSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSingleton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +148,7 @@
 		D6C48AF01A9B3EEC00C53409 /* CoreHamburgerManagerVC */ = {
 			isa = PBXGroup;
 			children = (
-				EEC7A0E61AB1A91C00061070 /* CoreHamburgerManagerVC */,
+				EE3FF10F1AB94F07003A528A /* CoreHamburgerManagerVC */,
 				D6C48AF41A9B3EEC00C53409 /* AppDelegate.h */,
 				D6C48AF51A9B3EEC00C53409 /* AppDelegate.m */,
 				D6C48AFA1A9B3EEC00C53409 /* CoreHamburgerNavVC-Info.plist */,
@@ -186,11 +187,12 @@
 			path = img;
 			sourceTree = "<group>";
 		};
-		EEC7A0E61AB1A91C00061070 /* CoreHamburgerManagerVC */ = {
+		EE3FF10F1AB94F07003A528A /* CoreHamburgerManagerVC */ = {
 			isa = PBXGroup;
 			children = (
-				EEC7A0E71AB1A93000061070 /* CoreHamburgerManagerVC.h */,
-				EEC7A0E81AB1A93000061070 /* CoreHamburgerManagerVC.m */,
+				EE3FF1101AB94F07003A528A /* CoreHamburgerManagerVC.h */,
+				EE3FF1111AB94F07003A528A /* CoreHamburgerManagerVC.m */,
+				EE3FF1121AB94F07003A528A /* HMSingleton.h */,
 			);
 			path = CoreHamburgerManagerVC;
 			sourceTree = "<group>";
@@ -306,7 +308,7 @@
 				D6C48B121A9B3EEC00C53409 /* AppDelegate.m in Sources */,
 				D6C48B1C1A9B3EEC00C53409 /* LeftVC.m in Sources */,
 				D6C48B1F1A9B3EEC00C53409 /* MyNavVC.m in Sources */,
-				EEC7A0E91AB1A93000061070 /* CoreHamburgerManagerVC.m in Sources */,
+				EE3FF1131AB94F07003A528A /* CoreHamburgerManagerVC.m in Sources */,
 				D6C48B1E1A9B3EEC00C53409 /* main.m in Sources */,
 				D6C48B101A9B3EEC00C53409 /* AboutVC.m in Sources */,
 			);

@@ -11,7 +11,7 @@
 
 @class CoreHamburgerManagerVC;
 
-typedef void(^LeftVCListItemClickBlock)(CoreHamburgerManagerVC *hmc, NSInteger index);
+typedef void(^LeftVCListItemClickBlock)(id, NSInteger index);
 
 @interface CoreHamburgerManagerVC : UIViewController
 
@@ -21,11 +21,12 @@ typedef void(^LeftVCListItemClickBlock)(CoreHamburgerManagerVC *hmc, NSInteger i
 @property (nonatomic,copy) LeftVCListItemClickBlock leftVCListItemClickBlock;
 
 
+@property (nonatomic,strong) UIViewController *mainVC;                                  //主体控制器
+
 /*
  *快速包装一个汉堡包菜单控制器体系
  */
 +(instancetype)hamburgerManagerVCWithMainVC:(UIViewController *)mainVC bgView:(UIView *)bgView leftVC:(UIViewController *)leftVC scale:(CGFloat)scale leftMargin:(CGFloat)leftMargin;
-
 
 
 
@@ -45,14 +46,12 @@ typedef void(^LeftVCListItemClickBlock)(CoreHamburgerManagerVC *hmc, NSInteger i
 
 
 /**
- *  找到汉堡控制器：
+ *  找到汉堡控制器：三代查找
  *
  *  @param vc 需要找到汉堡控制器的子控制器
  *
  *  @return 汉堡控制器
  */
 +(instancetype)findHamburgerManagerVCFromVC:(UIViewController *)vc;
-
-
 
 @end

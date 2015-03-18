@@ -23,8 +23,6 @@ CGFloat const leftViewScale=.9f;                                                
  *  属性列表1
  */
 
-@property (nonatomic,strong) UIViewController *mainVC;                                  //主体控制器
-
 @property (nonatomic,strong) UIViewController *leftVC;                                  //左边控制器
 
 @property (nonatomic,strong) UIView *bgView;                                            //背景视图
@@ -62,6 +60,8 @@ CGFloat const leftViewScale=.9f;                                                
 +(instancetype)hamburgerManagerVCWithMainVC:(UIViewController *)mainVC bgView:(UIView *)bgView leftVC:(UIViewController *)leftVC scale:(CGFloat)scale leftMargin:(CGFloat)leftMargin{
     
     CoreHamburgerManagerVC *hamburgerManagerVC=[[CoreHamburgerManagerVC alloc] init];
+    
+    [hamburgerManagerVC removeFromParentViewController];
     
     //记录主体控制器
     hamburgerManagerVC.mainVC=mainVC;
@@ -243,11 +243,16 @@ CGFloat const leftViewScale=.9f;                                                
 -(void)showHamburgerMeauVC{
     
     [self showHamburgerMeauVCWithAnim:YES];
+    
 }
 
 -(void)showHamburgerMeauVCWithAnim:(BOOL)withAnim{
     //添加遮罩按钮
     [_mainVC.view addSubview:self.maskBtn];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.maskBtn.userInteractionEnabled=NO;
+    });
     
     //执行一个动画
     [UIView animateWithDuration:animationDuratioin animations:^{
@@ -262,20 +267,31 @@ CGFloat const leftViewScale=.9f;                                                
         self.leftVCShowing=YES;
     } completion:^(BOOL finished) {
         
-        if(!withAnim) return;
+        if(!withAnim){
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.maskBtn.userInteractionEnabled=YES;
+            });
+             return;
+        }
         
         //执行一个图层帧动画
         CAKeyframeAnimation *kfa=[CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
         
         CGFloat scale=self.scale;
         
+        CGFloat timeDuratiom=.5f;
+        
         kfa.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
         
         kfa.values=@[@(scale),@(scale-.03f),@(scale-.01f),@(scale),@(scale+.006f),@(scale)];
         
-        kfa.duration=.5f;
+        kfa.duration=5.5f;
         
         [_mainVC.view.layer addAnimation:kfa forKey:@"fka"];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(timeDuratiom * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            self.maskBtn.userInteractionEnabled=YES;
+        });
     }];
 }
 
@@ -389,7 +405,7 @@ CGFloat const leftViewScale=.9f;                                                
 }
 
 /**
- *  找到汉堡控制器：
+ *  找到汉堡控制器：三代查找
  *
  *  @param vc 需要找到汉堡控制器的子控制器
  *
@@ -402,15 +418,16 @@ CGFloat const leftViewScale=.9f;                                                
     if(parentVC==nil) return nil;
     
     if([parentVC isKindOfClass:self]){
-        return parentVC;
+        
+        CoreHamburgerManagerVC *hamVC=(CoreHamburgerManagerVC *)parentVC;
+        
+        return hamVC;
     }else{
         return [self findHamburgerManagerVCFromVC:parentVC];
     }
+    
+    
+    
 }
-
-
-
-
-
 
 @end
