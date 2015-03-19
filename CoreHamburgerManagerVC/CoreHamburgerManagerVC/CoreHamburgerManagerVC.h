@@ -46,7 +46,7 @@ typedef void(^LeftVCListItemClickBlock)(id, NSInteger index);
 
 
 /**
- *  找到汉堡控制器：三代查找
+ *  找到汉堡控制器：
  *
  *  @param vc 需要找到汉堡控制器的子控制器
  *

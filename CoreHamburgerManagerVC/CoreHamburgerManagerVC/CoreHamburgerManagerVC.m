@@ -424,10 +424,7 @@ CGFloat const leftViewScale=.9f;                                                
         return hamVC;
     }else{
         return [self findHamburgerManagerVCFromVC:parentVC];
-    }
-    
-    
-    
+    } 
 }
 
 @end
