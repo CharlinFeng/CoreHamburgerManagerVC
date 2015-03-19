@@ -7,7 +7,7 @@
 >1.支持所有ios版本（ios6-ios8），没有版本压力！<br />
 >2.支持大屏的横竖屏，不再担心横屏变形了。<br />
 >3.本框架高度解耦，不是一键式，请注意！你需要了解本框架的结构 CoreHamburgerManagerVC是父类控制器，你需要指定两个控制器，一个是左侧的控制器就是你的汉堡菜单控制器，一个是主体控制器。虽然是叫左侧控制器，但是三个控制器均是全屏布局，只是说左侧控制器内容需要你自行控制。<br />
->4 CoreHamburgerManagerVC是单例对象，你可很方便的获取。<br />
+>4 CoreHamburgerManagerVC是一个父控制器，你使用find方法可很方便的获取。<br />
 >5.带有很好的封装。流畅的性能优化体验，阴影效果等一应俱全！
 
 <br />
@@ -35,13 +35,24 @@
      *  隐藏左侧的汉堡包菜单
      */
     -(void)hideHamburgerMeauVC;
+    
+        
+    /**
+     *  找到汉堡控制器：
+     *
+     *  @param vc 需要找到汉堡控制器的子控制器
+     *
+     *  @return 汉堡控制器
+     */
+    +(instancetype)findHamburgerManagerVCFromVC:(UIViewController *)vc;
+    
 
 >6.并不是所有的页面都需要这个效果，所以这个效果默认是关闭的，你要手动在需要手势滑动左侧菜单的页面添加这个功能：
 
     //调用
     -(void)addPanView:(UIView *)panView;
     
-     CoreHamburgerManagerVC *hvc=[CoreHamburgerManagerVC sharedCoreHamburgerManagerVC];
+     
     
     [hvc addPanView:self.view];
     
