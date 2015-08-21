@@ -279,13 +279,13 @@ CGFloat const leftViewScale=.9f;                                                
         
         CGFloat scale=self.scale;
         
-        CGFloat timeDuratiom=.5f;
+        CGFloat timeDuratiom=.25f;
         
         kfa.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
         
         kfa.values=@[@(scale),@(scale-.03f),@(scale-.01f),@(scale),@(scale+.006f),@(scale)];
         
-        kfa.duration=5.5f;
+        kfa.duration=.4f;
         
         [_mainVC.view.layer addAnimation:kfa forKey:@"fka"];
         
